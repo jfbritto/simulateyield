@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rendimentos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="icon" href="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/08/31174907/Bitcoin-PNG-HD.png">
+    
+</head>
+<body>
+
+
+    <div class="container">
+            
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Rendimento do dia</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">%</span>
+                                    </div>
+                                    <input type="number" id="rendimento" class="form-control change text-center" value="" autofocus>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Cotação US$</span>
+                                    </div>
+                                    <input type="number" id="dolar" class="form-control change text-center" value="">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Desconto saque %</span>
+                                    </div>
+                                    <input type="number" id="descontosaque" class="form-control change text-center" value="5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Rendimentos João Filipi</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta1" class="form-control change" value="3000">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta1" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal1" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta2" class="form-control change" value="1000">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta2" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal2" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta3" class="form-control change" value="500">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta3" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal3" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta4" class="form-control change" value="100">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta4" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal4" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta5" class="form-control change" value="100">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta5" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal5" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Rendimentos Jorginho</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta6" class="form-control change" value="5000">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta6" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal6" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta7" class="form-control change" value="5000">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta7" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal7" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta8" class="form-control change" value="300">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta8" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal8" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">BOT</span>
+                                    </div>
+                                    <input type="number" id="conta9" class="form-control change" value="100">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="resultconta9" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="resultcontareal9" readonly class="form-control change" value="0">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-3">
+                                <input type="text" class="form-control" style="visibility: hidden;">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Desconto saque João Filipi</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="descontosaquedolarjoao" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="descontosaquereaisjoao" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Desconto saque Jorginho</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="descontosaquedolarjorginho" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="descontosaquereaisjorginho" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Total João Filipi</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="totaljoao" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="totaljoaoreais" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <div class="card-header">Total Jorginho</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">US$</span>
+                                    </div>
+                                    <input type="number" id="totaljorginho" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">R$</span>
+                                    </div>
+                                    <input type="number" id="totaljorginhoreais" class="form-control text-center" readonly value="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <span class="" style="font-size: 12px">Developed by Jf.Britto and Kesse_Jones</span>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $(".change").on('keyup', function(){
+
+            let conta1 = $("#conta1").val();
+            let conta2 = $("#conta2").val();
+            let conta3 = $("#conta3").val();
+            let conta4 = $("#conta4").val();
+            let conta5 = $("#conta5").val();
+            let conta6 = $("#conta6").val();
+            let conta7 = $("#conta7").val();
+            let conta8 = $("#conta8").val();
+            let conta9 = $("#conta9").val();
+
+            let rendimento1 = calculaRendimento($("#rendimento").val(), conta1);
+            let rendimento2 = calculaRendimento($("#rendimento").val(), conta2);
+            let rendimento3 = calculaRendimento($("#rendimento").val(), conta3);
+            let rendimento4 = calculaRendimento($("#rendimento").val(), conta4);
+            let rendimento5 = calculaRendimento($("#rendimento").val(), conta5);
+            let rendimento6 = calculaRendimento($("#rendimento").val(), conta6);
+            let rendimento7 = calculaRendimento($("#rendimento").val(), conta7);
+            let rendimento8 = calculaRendimento($("#rendimento").val(), conta8);
+            let rendimento9 = calculaRendimento($("#rendimento").val(), conta9);
+
+            $("#resultconta1").val( rendimento1.toFixed(2) );
+            $("#resultconta2").val( rendimento2.toFixed(2) );
+            $("#resultconta3").val( rendimento3.toFixed(2) );
+            $("#resultconta4").val( rendimento4.toFixed(2) );
+            $("#resultconta5").val( rendimento5.toFixed(2) );
+
+            $("#resultconta6").val( rendimento6.toFixed(2) );
+            $("#resultconta7").val( rendimento7.toFixed(2) );
+            $("#resultconta8").val( rendimento8.toFixed(2) );
+            $("#resultconta9").val( rendimento9.toFixed(2) );
+
+            $("#resultcontareal1").val( (rendimento1*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal2").val( (rendimento2*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal3").val( (rendimento3*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal4").val( (rendimento4*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal5").val( (rendimento5*$("#dolar").val()).toFixed(2) );
+
+            $("#resultcontareal6").val( (rendimento6*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal7").val( (rendimento7*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal8").val( (rendimento8*$("#dolar").val()).toFixed(2) );
+            $("#resultcontareal9").val( (rendimento9*$("#dolar").val()).toFixed(2) );
+
+            let totaljoao = rendimento1 + rendimento2 + rendimento3 + rendimento4 + rendimento5;
+            let totaljorginho = rendimento6 + rendimento7 + rendimento8 + rendimento9;
+
+            let descontosaquedolarjoao      = totaljoao*($("#descontosaque").val()/100);
+            let descontosaquereaisjoao      = (totaljoao*($("#descontosaque").val()/100))*$("#dolar").val();
+            let descontosaquedolarjorginho  = totaljorginho*($("#descontosaque").val()/100);
+            let descontosaquereaisjorginho  =  (totaljorginho*($("#descontosaque").val()/100))*$("#dolar").val();
+
+            $("#descontosaquedolarjoao").val( descontosaquedolarjoao.toFixed(2) );
+            $("#descontosaquereaisjoao").val( descontosaquereaisjoao.toFixed(2) );
+
+            $("#descontosaquedolarjorginho").val( descontosaquedolarjorginho.toFixed(2) );
+            $("#descontosaquereaisjorginho").val( descontosaquereaisjorginho.toFixed(2) );
+
+
+            $("#totaljoao").val( (totaljoao - descontosaquedolarjoao).toFixed(2) );
+            $("#totaljorginho").val( (totaljorginho - descontosaquedolarjorginho).toFixed(2) );
+
+            $("#totaljoaoreais").val( ((totaljoao*$("#dolar").val()) - descontosaquereaisjoao).toFixed(2) );
+            $("#totaljorginhoreais").val( ((totaljorginho*$("#dolar").val()) - descontosaquereaisjorginho).toFixed(2) )
+        });
+
+
+
+        function calculaRendimento(porcentagem, conta)
+        {
+            const result = (conta * porcentagem)/100;
+            return result;
+        }
+
+
+        function pegaDolar()
+        {
+            $.get('https://economia.awesomeapi.com.br/USD-BRL', function(data){
+
+                $("#dolar").val(data[0].bid)
+
+            }).fail(function(){
+
+            });
+        }
+
+
+        pegaDolar()
+
+    });
+
+
+    </script>
+
+
+</body>
+</html>
